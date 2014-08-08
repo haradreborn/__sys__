@@ -1,0 +1,35 @@
+com.harad.prology.MainActivity -> com.harad.prology.MainActivity:
+    int MENU_COPY -> a
+    int MENU_SHARE -> b
+    int MENU_SAVE -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void startTestGLForGPUInfo() -> m
+    java.lang.String readFile() -> a
+    java.lang.String Cores() -> b
+    java.lang.String readFileC() -> c
+    int freq() -> d
+    java.lang.String readFileF() -> e
+    java.lang.String sd_card_free() -> f
+    java.lang.String data() -> g
+    java.lang.String readFileM() -> h
+    int rmem() -> i
+    java.lang.String res() -> j
+    float diagonal() -> k
+    java.lang.Float ppi() -> l
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+com.harad.prology.TestGL -> com.harad.prology.TestGL:
+    android.opengl.GLSurfaceView mGLSurfaceView -> a
+    android.os.Handler h -> b
+    android.opengl.GLSurfaceView$Renderer renderer -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void close(java.lang.String) -> a
+com.harad.prology.TestGL$1 -> com.harad.prology.a:
+    com.harad.prology.TestGL this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.harad.prology.TestGL$2 -> com.harad.prology.b:
+    com.harad.prology.TestGL this$0 -> a
+    void onSurfaceCreated(javax.microedition.khronos.opengles.GL10,javax.microedition.khronos.egl.EGLConfig) -> onSurfaceCreated
+    void onSurfaceChanged(javax.microedition.khronos.opengles.GL10,int,int) -> onSurfaceChanged
+    void onDrawFrame(javax.microedition.khronos.opengles.GL10) -> onDrawFrame

@@ -1,0 +1,13 @@
+com.harad.prology.MainActivity
+com.harad.prology.MainActivity: MainActivity()
+com.harad.prology.TestGL
+com.harad.prology.TestGL: TestGL()
+com.harad.sysrep.R$drawable: int ic_launcher
+com.harad.sysrep.R$drawable: int icon
+com.harad.sysrep.R$id: int tvInfo
+com.harad.sysrep.R$layout: int activity_main
+com.harad.sysrep.R$string: int app_name
+com.harad.sysrep.R$string: int labels
+com.harad.sysrep.R$string: int loading
+com.harad.sysrep.R$style: int AppBaseTheme
+com.harad.sysrep.R$style: int AppTheme

@@ -25,6 +25,7 @@ import android.view.*;
 import android.text.*;
 import android.view.ContextMenu.*;
 import android.widget.*;
+import com.harad.sysrep.R;
 
 public class MainActivity extends Activity
 {

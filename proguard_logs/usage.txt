@@ -1,0 +1,10 @@
+com.harad.prology.MainActivity:
+    private static final int GL_REQUEST_CODE
+com.harad.sysrep.BuildConfig
+com.harad.sysrep.R
+com.harad.sysrep.R$attr
+com.harad.sysrep.R$drawable
+com.harad.sysrep.R$id
+com.harad.sysrep.R$layout
+com.harad.sysrep.R$string
+com.harad.sysrep.R$style

@@ -1,0 +1,2478 @@
+_____________________________________________________________________
++ Program class: com/harad/prology/MainActivity
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.harad.prology.MainActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 506):
+  + Integer [1]
+  + Integer [2]
+  + Integer [3]
+  + Integer [17]
+  + Integer [65536]
+  + Integer [2130903040]
+  + Integer [2131099648]
+  + Float [10.0]
+  + String []
+  + String [
+]
+  + String [/proc/cpuinfo]
+  + String [/proc/meminfo]
+  + String [/properties.txt]
+  + String [/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq]
+  + String [Android version: ]
+  + String [Board: ]
+  + String [Brand: ]
+  + String [CPU Chip: ]
+  + String [Choose an Email client :]
+  + String [Copied to clipboard]
+  + String [Copy to the clipboard]
+  + String [GLInfo]
+  + String [Internal storage: ]
+  + String [MB]
+  + String [Max CPU frequency: ]
+  + String [MemTotal:\s*\s*\s* (.*)\s*kB]
+  + String [Mhz]
+  + String [Model: ]
+  + String [Number of cores: ]
+  + String [Press long on text to manage your data]
+  + String [Processor: ]
+  + String [Processor\s*: (.*)]
+  + String [RAM: ]
+  + String [SDK version: ]
+  + String [Save to SDcard]
+  + String [Saved to properties.txt]
+  + String [Screen diagonal: ]
+  + String [Screen ppi: ]
+  + String [Screen resolution: ]
+  + String [Send via Email]
+  + String [System storage: ]
+  + String [android.intent.action.SEND]
+  + String [android.intent.extra.EMAIL]
+  + String [android.intent.extra.SUBJECT]
+  + String [android.intent.extra.TEXT]
+  + String [clipboard]
+  + String [error]
+  + String [it can't work]
+  + String [message/rfc822]
+  + String [processor]
+  + String [x]
+  + Class [[C]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/graphics/Point]
+  + Class [android/os/Build]
+  + Class [android/os/Build$VERSION]
+  + Class [android/os/Environment]
+  + Class [android/os/StatFs]
+  + Class [android/text/ClipboardManager]
+  + Class [android/text/format/Formatter]
+  + Class [android/util/DisplayMetrics]
+  + Class [android/util/FloatMath]
+  + Class [android/util/Log]
+  + Class [android/view/ContextMenu]
+  + Class [android/view/Display]
+  + Class [android/view/MenuItem]
+  + Class [android/view/WindowManager]
+  + Class [android/widget/TextView]
+  + Class [android/widget/Toast]
+  + Class [com/harad/prology/MainActivity]
+  + Class [com/harad/prology/TestGL]
+  + Class [java/io/BufferedReader]
+  + Class [java/io/File]
+  + Class [java/io/FileOutputStream]
+  + Class [java/io/FileReader]
+  + Class [java/io/OutputStreamWriter]
+  + Class [java/lang/Double]
+  + Class [java/lang/Exception]
+  + Class [java/lang/Float]
+  + Class [java/lang/Integer]
+  + Class [java/lang/Math]
+  + Class [java/lang/NoSuchMethodError]
+  + Class [java/lang/String]
+  + Class [java/lang/StringBuilder]
+  + Class [java/util/regex/Matcher]
+  + Class [java/util/regex/Pattern]
+  + Double [10.0]
+  + Fieldref [android/graphics/Point.x I]
+  + Fieldref [android/graphics/Point.y I]
+  + Fieldref [android/os/Build.BOARD Ljava/lang/String;]
+  + Fieldref [android/os/Build.BRAND Ljava/lang/String;]
+  + Fieldref [android/os/Build.HARDWARE Ljava/lang/String;]
+  + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
+  + Fieldref [android/os/Build$VERSION.RELEASE Ljava/lang/String;]
+  + Fieldref [android/os/Build$VERSION.SDK Ljava/lang/String;]
+  + Fieldref [android/os/Build$VERSION.SDK_INT I]
+  + Fieldref [android/util/DisplayMetrics.heightPixels I]
+  + Fieldref [android/util/DisplayMetrics.widthPixels I]
+  + Fieldref [android/util/DisplayMetrics.xdpi F]
+  + Fieldref [android/util/DisplayMetrics.ydpi F]
+  + Fieldref [com/harad/prology/MainActivity.a I]
+  + Fieldref [com/harad/prology/MainActivity.b I]
+  + Fieldref [com/harad/prology/MainActivity.c I]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onActivityResult (IILandroid/content/Intent;)V]
+  + Methodref [android/app/Activity.onContextItemSelected (Landroid/view/MenuItem;)Z]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  + Methodref [android/content/Intent.createChooser (Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.getStringExtra (Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setFlags (I)Landroid/content/Intent;]
+  + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/graphics/Point.<init> ()V]
+  + Methodref [android/os/Environment.getDataDirectory ()Ljava/io/File;]
+  + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+  + Methodref [android/os/StatFs.<init> (Ljava/lang/String;)V]
+  + Methodref [android/os/StatFs.getBlockCount ()I]
+  + Methodref [android/os/StatFs.getBlockSize ()I]
+  + Methodref [android/text/ClipboardManager.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [android/text/format/Formatter.formatFileSize (Landroid/content/Context;J)Ljava/lang/String;]
+  + Methodref [android/util/DisplayMetrics.<init> ()V]
+  + Methodref [android/util/FloatMath.sqrt (F)F]
+  + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+  + Methodref [android/view/Display.getRealSize (Landroid/graphics/Point;)V]
+  + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+  + Methodref [android/widget/Toast.show ()V]
+  + Methodref [com/harad/prology/MainActivity.a ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.b ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.c ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.d ()I]
+  + Methodref [com/harad/prology/MainActivity.e ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.f ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.findViewById (I)Landroid/view/View;]
+  + Methodref [com/harad/prology/MainActivity.g ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.getBaseContext ()Landroid/content/Context;]
+  + Methodref [com/harad/prology/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+  + Methodref [com/harad/prology/MainActivity.h ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.i ()I]
+  + Methodref [com/harad/prology/MainActivity.j ()Ljava/lang/String;]
+  + Methodref [com/harad/prology/MainActivity.k ()F]
+  + Methodref [com/harad/prology/MainActivity.l ()Ljava/lang/Float;]
+  + Methodref [com/harad/prology/MainActivity.m ()V]
+  + Methodref [com/harad/prology/MainActivity.overridePendingTransition (II)V]
+  + Methodref [com/harad/prology/MainActivity.registerForContextMenu (Landroid/view/View;)V]
+  + Methodref [com/harad/prology/MainActivity.setContentView (I)V]
+  + Methodref [com/harad/prology/MainActivity.startActivity (Landroid/content/Intent;)V]
+  + Methodref [com/harad/prology/MainActivity.startActivityForResult (Landroid/content/Intent;I)V]
+  + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
+  + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
+  + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+  + Methodref [java/io/File.createNewFile ()Z]
+  + Methodref [java/io/File.getPath ()Ljava/lang/String;]
+  + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+  + Methodref [java/io/FileOutputStream.close ()V]
+  + Methodref [java/io/FileReader.<init> (Ljava/lang/String;)V]
+  + Methodref [java/io/FileReader.read ([C)I]
+  + Methodref [java/io/OutputStreamWriter.<init> (Ljava/io/OutputStream;)V]
+  + Methodref [java/io/OutputStreamWriter.append (Ljava/lang/CharSequence;)Ljava/io/Writer;]
+  + Methodref [java/io/OutputStreamWriter.close ()V]
+  + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
+  + Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
+  + Methodref [java/lang/Exception.printStackTrace ()V]
+  + Methodref [java/lang/Float.floatValue ()F]
+  + Methodref [java/lang/Float.valueOf (F)Ljava/lang/Float;]
+  + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+  + Methodref [java/lang/Integer.toString (I)Ljava/lang/String;]
+  + Methodref [java/lang/Math.round (F)I]
+  + Methodref [java/lang/String.trim ()Ljava/lang/String;]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + Methodref [java/util/regex/Matcher.find ()Z]
+  + Methodref [java/util/regex/Matcher.group (I)Ljava/lang/String;]
+  + Methodref [java/util/regex/Pattern.compile (Ljava/lang/String;)Ljava/util/regex/Pattern;]
+  + Methodref [java/util/regex/Pattern.matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+  + InterfaceMethodref [android/view/ContextMenu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+  + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+  + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+  + NameAndType [<init> (Ljava/io/File;)V]
+  + NameAndType [<init> (Ljava/io/OutputStream;)V]
+  + NameAndType [<init> (Ljava/io/Reader;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [BOARD Ljava/lang/String;]
+  + NameAndType [BRAND Ljava/lang/String;]
+  + NameAndType [HARDWARE Ljava/lang/String;]
+  + NameAndType [MODEL Ljava/lang/String;]
+  + NameAndType [RELEASE Ljava/lang/String;]
+  + NameAndType [SDK Ljava/lang/String;]
+  + NameAndType [SDK_INT I]
+  + NameAndType [a ()Ljava/lang/String;]
+  + NameAndType [a I]
+  + NameAndType [add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+  + NameAndType [append (C)Ljava/lang/StringBuilder;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/CharSequence;)Ljava/io/Writer;]
+  + NameAndType [append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()Ljava/lang/String;]
+  + NameAndType [b I]
+  + NameAndType [c ()Ljava/lang/String;]
+  + NameAndType [c I]
+  + NameAndType [close ()V]
+  + NameAndType [compile (Ljava/lang/String;)Ljava/util/regex/Pattern;]
+  + NameAndType [createChooser (Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+  + NameAndType [createNewFile ()Z]
+  + NameAndType [d ()I]
+  + NameAndType [e ()Ljava/lang/String;]
+  + NameAndType [f ()Ljava/lang/String;]
+  + NameAndType [find ()Z]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [floatValue ()F]
+  + NameAndType [formatFileSize (Landroid/content/Context;J)Ljava/lang/String;]
+  + NameAndType [g ()Ljava/lang/String;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getBlockCount ()I]
+  + NameAndType [getBlockSize ()I]
+  + NameAndType [getDataDirectory ()Ljava/io/File;]
+  + NameAndType [getDefaultDisplay ()Landroid/view/Display;]
+  + NameAndType [getExternalStorageDirectory ()Ljava/io/File;]
+  + NameAndType [getItemId ()I]
+  + NameAndType [getMessage ()Ljava/lang/String;]
+  + NameAndType [getMetrics (Landroid/util/DisplayMetrics;)V]
+  + NameAndType [getPath ()Ljava/lang/String;]
+  + NameAndType [getRealSize (Landroid/graphics/Point;)V]
+  + NameAndType [getStringExtra (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [getText ()Ljava/lang/CharSequence;]
+  + NameAndType [getWindowManager ()Landroid/view/WindowManager;]
+  + NameAndType [group (I)Ljava/lang/String;]
+  + NameAndType [h ()Ljava/lang/String;]
+  + NameAndType [heightPixels I]
+  + NameAndType [i ()I]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [j ()Ljava/lang/String;]
+  + NameAndType [k ()F]
+  + NameAndType [l ()Ljava/lang/Float;]
+  + NameAndType [m ()V]
+  + NameAndType [makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+  + NameAndType [matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+  + NameAndType [onActivityResult (IILandroid/content/Intent;)V]
+  + NameAndType [onContextItemSelected (Landroid/view/MenuItem;)Z]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [overridePendingTransition (II)V]
+  + NameAndType [parseInt (Ljava/lang/String;)I]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [putExtra (Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [read ([C)I]
+  + NameAndType [readLine ()Ljava/lang/String;]
+  + NameAndType [registerForContextMenu (Landroid/view/View;)V]
+  + NameAndType [round (F)I]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setFlags (I)Landroid/content/Intent;]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [setType (Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [show ()V]
+  + NameAndType [sqrt (F)F]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [startActivityForResult (Landroid/content/Intent;I)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [toString (D)Ljava/lang/String;]
+  + NameAndType [toString (I)Ljava/lang/String;]
+  + NameAndType [trim ()Ljava/lang/String;]
+  + NameAndType [valueOf (F)Ljava/lang/Float;]
+  + NameAndType [widthPixels I]
+  + NameAndType [x I]
+  + NameAndType [xdpi F]
+  + NameAndType [y I]
+  + NameAndType [ydpi F]
+  + Utf8 []
+  + Utf8 [
+]
+  + Utf8 [()F]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/view/Display;]
+  + Utf8 [()Landroid/view/WindowManager;]
+  + Utf8 [()Ljava/io/File;]
+  + Utf8 [()Ljava/lang/CharSequence;]
+  + Utf8 [()Ljava/lang/Float;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(C)Ljava/lang/StringBuilder;]
+  + Utf8 [(D)Ljava/lang/String;]
+  + Utf8 [(F)F]
+  + Utf8 [(F)I]
+  + Utf8 [(F)Ljava/lang/Float;]
+  + Utf8 [(I)Landroid/content/Intent;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)V]
+  + Utf8 [(II)V]
+  + Utf8 [(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+  + Utf8 [(IILandroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Context;J)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/Class;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Intent;I)V]
+  + Utf8 [(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+  + Utf8 [(Landroid/graphics/Point;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/util/DisplayMetrics;)V]
+  + Utf8 [(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V]
+  + Utf8 [(Landroid/view/MenuItem;)Z]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/io/File;)V]
+  + Utf8 [(Ljava/io/OutputStream;)V]
+  + Utf8 [(Ljava/io/Reader;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Ljava/io/Writer;]
+  + Utf8 [(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)Ljava/util/regex/Pattern;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [([C)I]
+  + Utf8 [/proc/cpuinfo]
+  + Utf8 [/proc/meminfo]
+  + Utf8 [/properties.txt]
+  + Utf8 [/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq]
+  + Utf8 [<init>]
+  + Utf8 [Android version: ]
+  + Utf8 [BOARD]
+  + Utf8 [BRAND]
+  + Utf8 [Board: ]
+  + Utf8 [Brand: ]
+  + Utf8 [CPU Chip: ]
+  + Utf8 [Choose an Email client :]
+  + Utf8 [Code]
+  + Utf8 [ConstantValue]
+  + Utf8 [Copied to clipboard]
+  + Utf8 [Copy to the clipboard]
+  + Utf8 [F]
+  + Utf8 [GLInfo]
+  + Utf8 [HARDWARE]
+  + Utf8 [I]
+  + Utf8 [Internal storage: ]
+  + Utf8 [Landroid/annotation/TargetApi;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [MB]
+  + Utf8 [MODEL]
+  + Utf8 [Max CPU frequency: ]
+  + Utf8 [MemTotal:\s*\s*\s* (.*)\s*kB]
+  + Utf8 [Mhz]
+  + Utf8 [Model: ]
+  + Utf8 [Number of cores: ]
+  + Utf8 [Press long on text to manage your data]
+  + Utf8 [Processor: ]
+  + Utf8 [Processor\s*: (.*)]
+  + Utf8 [RAM: ]
+  + Utf8 [RELEASE]
+  + Utf8 [RuntimeInvisibleAnnotations]
+  + Utf8 [SDK]
+  + Utf8 [SDK version: ]
+  + Utf8 [SDK_INT]
+  + Utf8 [Save to SDcard]
+  + Utf8 [Saved to properties.txt]
+  + Utf8 [Screen diagonal: ]
+  + Utf8 [Screen ppi: ]
+  + Utf8 [Screen resolution: ]
+  + Utf8 [Send via Email]
+  + Utf8 [StackMapTable]
+  + Utf8 [System storage: ]
+  + Utf8 [[C]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [android.intent.action.SEND]
+  + Utf8 [android.intent.extra.EMAIL]
+  + Utf8 [android.intent.extra.SUBJECT]
+  + Utf8 [android.intent.extra.TEXT]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/graphics/Point]
+  + Utf8 [android/os/Build]
+  + Utf8 [android/os/Build$VERSION]
+  + Utf8 [android/os/Environment]
+  + Utf8 [android/os/StatFs]
+  + Utf8 [android/text/ClipboardManager]
+  + Utf8 [android/text/format/Formatter]
+  + Utf8 [android/util/DisplayMetrics]
+  + Utf8 [android/util/FloatMath]
+  + Utf8 [android/util/Log]
+  + Utf8 [android/view/ContextMenu]
+  + Utf8 [android/view/Display]
+  + Utf8 [android/view/MenuItem]
+  + Utf8 [android/view/WindowManager]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [clipboard]
+  + Utf8 [close]
+  + Utf8 [com/harad/prology/MainActivity]
+  + Utf8 [com/harad/prology/TestGL]
+  + Utf8 [compile]
+  + Utf8 [createChooser]
+  + Utf8 [createNewFile]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [error]
+  + Utf8 [f]
+  + Utf8 [find]
+  + Utf8 [findViewById]
+  + Utf8 [floatValue]
+  + Utf8 [formatFileSize]
+  + Utf8 [g]
+  + Utf8 [getBaseContext]
+  + Utf8 [getBlockCount]
+  + Utf8 [getBlockSize]
+  + Utf8 [getDataDirectory]
+  + Utf8 [getDefaultDisplay]
+  + Utf8 [getExternalStorageDirectory]
+  + Utf8 [getItemId]
+  + Utf8 [getMessage]
+  + Utf8 [getMetrics]
+  + Utf8 [getPath]
+  + Utf8 [getRealSize]
+  + Utf8 [getStringExtra]
+  + Utf8 [getSystemService]
+  + Utf8 [getText]
+  + Utf8 [getWindowManager]
+  + Utf8 [group]
+  + Utf8 [h]
+  + Utf8 [heightPixels]
+  + Utf8 [i]
+  + Utf8 [it can't work]
+  + Utf8 [j]
+  + Utf8 [java/io/BufferedReader]
+  + Utf8 [java/io/File]
+  + Utf8 [java/io/FileOutputStream]
+  + Utf8 [java/io/FileReader]
+  + Utf8 [java/io/OutputStreamWriter]
+  + Utf8 [java/lang/Double]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/Float]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/NoSuchMethodError]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/regex/Matcher]
+  + Utf8 [java/util/regex/Pattern]
+  + Utf8 [k]
+  + Utf8 [l]
+  + Utf8 [m]
+  + Utf8 [makeText]
+  + Utf8 [matcher]
+  + Utf8 [message/rfc822]
+  + Utf8 [onActivityResult]
+  + Utf8 [onContextItemSelected]
+  + Utf8 [onCreate]
+  + Utf8 [onCreateContextMenu]
+  + Utf8 [overridePendingTransition]
+  + Utf8 [parseInt]
+  + Utf8 [printStackTrace]
+  + Utf8 [processor]
+  + Utf8 [putExtra]
+  + Utf8 [read]
+  + Utf8 [readLine]
+  + Utf8 [registerForContextMenu]
+  + Utf8 [round]
+  + Utf8 [setContentView]
+  + Utf8 [setFlags]
+  + Utf8 [setText]
+  + Utf8 [setType]
+  + Utf8 [show]
+  + Utf8 [sqrt]
+  + Utf8 [startActivity]
+  + Utf8 [startActivityForResult]
+  + Utf8 [toString]
+  + Utf8 [trim]
+  + Utf8 [value]
+  + Utf8 [valueOf]
+  + Utf8 [widthPixels]
+  + Utf8 [x]
+  + Utf8 [xdpi]
+  + Utf8 [y]
+  + Utf8 [ydpi]
+
+Fields (count = 3):
+  + Field:        a I
+    Access flags: 0x10
+      = final int a
+    Class member attributes (count = 1):
+    + Constant value attribute:
+    + Integer [1]
+  + Field:        b I
+    Access flags: 0x10
+      = final int b
+    Class member attributes (count = 1):
+    + Constant value attribute:
+    + Integer [2]
+  + Field:        c I
+    Access flags: 0x10
+      = final int c
+    Class member attributes (count = 1):
+    + Constant value attribute:
+    + Integer [3]
+
+Methods (count = 18):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public MainActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #106
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_1
+      [6] putfield #103
+        + Fieldref [com/harad/prology/MainActivity.a I]
+      [9] aload_0 v0
+      [10] iconst_2
+      [11] putfield #104
+        + Fieldref [com/harad/prology/MainActivity.b I]
+      [14] aload_0 v0
+      [15] iconst_3
+      [16] putfield #105
+        + Fieldref [com/harad/prology/MainActivity.c I]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #109
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #6
+        + Integer [2130903040]
+      [8] invokevirtual #155
+        + Methodref [com/harad/prology/MainActivity.setContentView (I)V]
+      [11] aload_0 v0
+      [12] invokespecial #152
+        + Methodref [com/harad/prology/MainActivity.m ()V]
+      [15] aload_0 v0
+      [16] ldc #30
+        + String [Press long on text to manage your data]
+      [18] iconst_1
+      [19] invokestatic #134
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [22] invokevirtual #135
+        + Methodref [android/widget/Toast.show ()V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       m()V
+    Access flags: 0x2
+      = private void m()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 2, stack = 4):
+      [0] new #54
+        + Class [android/content/Intent]
+      [3] dup
+      [4] aload_0 v0
+      [5] ldc #72
+        + Class [com/harad/prology/TestGL]
+      [7] invokespecial #110
+        + Methodref [android/content/Intent.<init> (Landroid/content/Context;Ljava/lang/Class;)V]
+      [10] astore_1 v1
+      [11] aload_1 v1
+      [12] ldc #5
+        + Integer [65536]
+      [14] invokevirtual #117
+        + Methodref [android/content/Intent.setFlags (I)Landroid/content/Intent;]
+      [17] pop
+      [18] aload_0 v0
+      [19] aload_1 v1
+      [20] sipush 1001
+      [23] invokevirtual #157
+        + Methodref [com/harad/prology/MainActivity.startActivityForResult (Landroid/content/Intent;I)V]
+      [26] aload_0 v0
+      [27] iconst_0
+      [28] iconst_0
+      [29] invokevirtual #153
+        + Methodref [com/harad/prology/MainActivity.overridePendingTransition (II)V]
+      [32] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 76, locals = 6, stack = 5):
+      [0] ldc #9
+        + String []
+      [2] astore_2 v2
+      [3] iconst_0
+      [4] istore v4
+      [6] new #73
+        + Class [java/io/BufferedReader]
+      [9] dup
+      [10] new #76
+        + Class [java/io/FileReader]
+      [13] dup
+      [14] ldc #11
+        + String [/proc/cpuinfo]
+      [16] invokespecial #165
+        + Methodref [java/io/FileReader.<init> (Ljava/lang/String;)V]
+      [19] invokespecial #158
+        + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
+      [22] astore_1 v1
+      [23] aload_1 v1
+      [24] invokevirtual #159
+        + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
+      [27] dup
+      [28] astore_3 v3
+      [29] ifnull +35 (target=64)
+      [32] iinc v4, 1
+      [35] ldc #32
+        + String [Processor\s*: (.*)]
+      [37] invokestatic #187
+        + Methodref [java/util/regex/Pattern.compile (Ljava/lang/String;)Ljava/util/regex/Pattern;]
+      [40] aload_3 v3
+      [41] invokevirtual #188
+        + Methodref [java/util/regex/Pattern.matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+      [44] astore v5
+      [46] aload v5
+      [48] invokevirtual #185
+        + Methodref [java/util/regex/Matcher.find ()Z]
+      [51] ifeq +10 (target=61)
+      [54] aload v5
+      [56] iconst_1
+      [57] invokevirtual #186
+        + Methodref [java/util/regex/Matcher.group (I)Ljava/lang/String;]
+      [60] astore_2 v2
+      [61] goto -38 (target=23)
+      [64] goto +10 (target=74)
+      [67] astore v5
+      [69] aload v5
+      [71] invokevirtual #172
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [74] aload_2 v2
+      [75] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (6 -> 64: 67):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 5):
+        - [23] Var: [a:com/harad/prology/MainActivity][a:java/io/BufferedReader][a:java/lang/String][T][i], Stack: 
+        - [61] Var: [a:com/harad/prology/MainActivity][a:java/io/BufferedReader][a:java/lang/String][a:java/lang/String][i], Stack: 
+        - [64] Var: ..., Stack: (empty)
+        - [67] Var: [a:com/harad/prology/MainActivity][T][a:java/lang/String][T][i], Stack: [a:java/lang/Exception]
+        - [74] Var: ..., Stack: (empty)
+  + Method:       b()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 57, locals = 6, stack = 2):
+      [0] aload_0 v0
+      [1] invokevirtual #138
+        + Methodref [com/harad/prology/MainActivity.c ()Ljava/lang/String;]
+      [4] astore_1 v1
+      [5] iconst_0
+      [6] istore_2 v2
+      [7] ldc #50
+        + String [processor]
+      [9] astore_3 v3
+      [10] aload_3 v3
+      [11] invokestatic #187
+        + Methodref [java/util/regex/Pattern.compile (Ljava/lang/String;)Ljava/util/regex/Pattern;]
+      [14] astore v4
+      [16] aload v4
+      [18] aload_1 v1
+      [19] invokevirtual #188
+        + Methodref [java/util/regex/Pattern.matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+      [22] astore v5
+      [24] aload v5
+      [26] invokevirtual #185
+        + Methodref [java/util/regex/Matcher.find ()Z]
+      [29] ifeq +9 (target=38)
+      [32] iinc v2, 1
+      [35] goto -11 (target=24)
+      [38] iload_2 v2
+      [39] iconst_1
+      [40] ificmpge +12 (target=52)
+      [43] iload_2 v2
+      [44] iconst_1
+      [45] iadd
+      [46] istore_2 v2
+      [47] iload_2 v2
+      [48] invokestatic #176
+        + Methodref [java/lang/Integer.toString (I)Ljava/lang/String;]
+      [51] areturn
+      [52] iload_2 v2
+      [53] invokestatic #176
+        + Methodref [java/lang/Integer.toString (I)Ljava/lang/String;]
+      [56] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [24] Var: [a:com/harad/prology/MainActivity][a:java/lang/String][i][a:java/lang/String][a:java/util/regex/Pattern][a:java/util/regex/Matcher], Stack: 
+        - [38] Var: ..., Stack: (empty)
+        - [52] Var: ..., Stack: (empty)
+  + Method:       c()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String c()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 76, locals = 6, stack = 3):
+      [0] sipush 512
+      [3] newarray 5
+      [5] astore_1 v1
+      [6] ldc #9
+        + String []
+      [8] astore_3 v3
+      [9] new #76
+        + Class [java/io/FileReader]
+      [12] dup
+      [13] ldc #11
+        + String [/proc/cpuinfo]
+      [15] invokespecial #165
+        + Methodref [java/io/FileReader.<init> (Ljava/lang/String;)V]
+      [18] astore_2 v2
+      [19] aload_2 v2
+      [20] aload_1 v1
+      [21] invokevirtual #166
+        + Methodref [java/io/FileReader.read ([C)I]
+      [24] istore v4
+      [26] iconst_0
+      [27] istore v5
+      [29] iload v5
+      [31] iload v4
+      [33] ificmpge +31 (target=64)
+      [36] new #85
+        + Class [java/lang/StringBuilder]
+      [39] dup
+      [40] invokespecial #179
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [43] aload_3 v3
+      [44] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [47] aload_1 v1
+      [48] iload v5
+      [50] caload
+      [51] invokevirtual #180
+        + Methodref [java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;]
+      [54] invokevirtual #184
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [57] astore_3 v3
+      [58] iinc v5, 1
+      [61] goto -32 (target=29)
+      [64] goto +10 (target=74)
+      [67] astore v4
+      [69] aload v4
+      [71] invokevirtual #172
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [74] aload_3 v3
+      [75] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (9 -> 64: 67):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [29] Var: [a:com/harad/prology/MainActivity][a:[C][a:java/io/FileReader][a:java/lang/String][i][i], Stack: 
+        - [64] Var: -2, Stack: (empty)
+        - [67] Var: [a:com/harad/prology/MainActivity][a:[C][T][a:java/lang/String], Stack: [a:java/lang/Exception]
+        - [74] Var: ..., Stack: (empty)
+  + Method:       d()I
+    Access flags: 0x1
+      = public int d()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] invokevirtual #140
+        + Methodref [com/harad/prology/MainActivity.e ()Ljava/lang/String;]
+      [4] astore_1 v1
+      [5] aload_1 v1
+      [6] invokevirtual #178
+        + Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [9] invokestatic #175
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [12] sipush 1000
+      [15] idiv
+      [16] istore_2 v2
+      [17] iload_2 v2
+      [18] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       e()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String e()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 76, locals = 6, stack = 3):
+      [0] sipush 512
+      [3] newarray 5
+      [5] astore_1 v1
+      [6] ldc #9
+        + String []
+      [8] astore_3 v3
+      [9] new #76
+        + Class [java/io/FileReader]
+      [12] dup
+      [13] ldc #14
+        + String [/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq]
+      [15] invokespecial #165
+        + Methodref [java/io/FileReader.<init> (Ljava/lang/String;)V]
+      [18] astore_2 v2
+      [19] aload_2 v2
+      [20] aload_1 v1
+      [21] invokevirtual #166
+        + Methodref [java/io/FileReader.read ([C)I]
+      [24] istore v4
+      [26] iconst_0
+      [27] istore v5
+      [29] iload v5
+      [31] iload v4
+      [33] ificmpge +31 (target=64)
+      [36] new #85
+        + Class [java/lang/StringBuilder]
+      [39] dup
+      [40] invokespecial #179
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [43] aload_3 v3
+      [44] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [47] aload_1 v1
+      [48] iload v5
+      [50] caload
+      [51] invokevirtual #180
+        + Methodref [java/lang/StringBuilder.append (C)Ljava/lang/StringBuilder;]
+      [54] invokevirtual #184
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [57] astore_3 v3
+      [58] iinc v5, 1
+      [61] goto -32 (target=29)
+      [64] goto +10 (target=74)
+      [67] astore v4
+      [69] aload v4
+      [71] invokevirtual #172
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [74] aload_3 v3
+      [75] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (9 -> 64: 67):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [29] Var: [a:com/harad/prology/MainActivity][a:[C][a:java/io/FileReader][a:java/lang/String][i][i], Stack: 
+        - [64] Var: -2, Stack: (empty)
+        - [67] Var: [a:com/harad/prology/MainActivity][a:[C][T][a:java/lang/String], Stack: [a:java/lang/Exception]
+        - [74] Var: ..., Stack: (empty)
+  + Method:       f()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String f()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 38, locals = 7, stack = 5):
+      [0] invokestatic #121
+        + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+      [3] astore_1 v1
+      [4] new #59
+        + Class [android/os/StatFs]
+      [7] dup
+      [8] aload_1 v1
+      [9] invokevirtual #162
+        + Methodref [java/io/File.getPath ()Ljava/lang/String;]
+      [12] invokespecial #122
+        + Methodref [android/os/StatFs.<init> (Ljava/lang/String;)V]
+      [15] astore_2 v2
+      [16] aload_2 v2
+      [17] invokevirtual #123
+        + Methodref [android/os/StatFs.getBlockCount ()I]
+      [20] i2l
+      [21] lstore_3 v3
+      [22] aload_2 v2
+      [23] invokevirtual #124
+        + Methodref [android/os/StatFs.getBlockSize ()I]
+      [26] i2l
+      [27] lstore v5
+      [29] aload_0 v0
+      [30] lload_3 v3
+      [31] lload v5
+      [33] lmul
+      [34] invokestatic #126
+        + Methodref [android/text/format/Formatter.formatFileSize (Landroid/content/Context;J)Ljava/lang/String;]
+      [37] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       g()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String g()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 38, locals = 7, stack = 5):
+      [0] invokestatic #120
+        + Methodref [android/os/Environment.getDataDirectory ()Ljava/io/File;]
+      [3] astore_1 v1
+      [4] new #59
+        + Class [android/os/StatFs]
+      [7] dup
+      [8] aload_1 v1
+      [9] invokevirtual #162
+        + Methodref [java/io/File.getPath ()Ljava/lang/String;]
+      [12] invokespecial #122
+        + Methodref [android/os/StatFs.<init> (Ljava/lang/String;)V]
+      [15] astore_2 v2
+      [16] aload_2 v2
+      [17] invokevirtual #124
+        + Methodref [android/os/StatFs.getBlockSize ()I]
+      [20] i2l
+      [21] lstore_3 v3
+      [22] aload_2 v2
+      [23] invokevirtual #123
+        + Methodref [android/os/StatFs.getBlockCount ()I]
+      [26] i2l
+      [27] lstore v5
+      [29] aload_0 v0
+      [30] lload v5
+      [32] lload_3 v3
+      [33] lmul
+      [34] invokestatic #126
+        + Methodref [android/text/format/Formatter.formatFileSize (Landroid/content/Context;J)Ljava/lang/String;]
+      [37] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       h()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String h()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 76, locals = 6, stack = 5):
+      [0] ldc #9
+        + String []
+      [2] astore_2 v2
+      [3] iconst_0
+      [4] istore v4
+      [6] new #73
+        + Class [java/io/BufferedReader]
+      [9] dup
+      [10] new #76
+        + Class [java/io/FileReader]
+      [13] dup
+      [14] ldc #12
+        + String [/proc/meminfo]
+      [16] invokespecial #165
+        + Methodref [java/io/FileReader.<init> (Ljava/lang/String;)V]
+      [19] invokespecial #158
+        + Methodref [java/io/BufferedReader.<init> (Ljava/io/Reader;)V]
+      [22] astore_1 v1
+      [23] aload_1 v1
+      [24] invokevirtual #159
+        + Methodref [java/io/BufferedReader.readLine ()Ljava/lang/String;]
+      [27] dup
+      [28] astore_3 v3
+      [29] ifnull +35 (target=64)
+      [32] iinc v4, 1
+      [35] ldc #26
+        + String [MemTotal:\s*\s*\s* (.*)\s*kB]
+      [37] invokestatic #187
+        + Methodref [java/util/regex/Pattern.compile (Ljava/lang/String;)Ljava/util/regex/Pattern;]
+      [40] aload_3 v3
+      [41] invokevirtual #188
+        + Methodref [java/util/regex/Pattern.matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;]
+      [44] astore v5
+      [46] aload v5
+      [48] invokevirtual #185
+        + Methodref [java/util/regex/Matcher.find ()Z]
+      [51] ifeq +10 (target=61)
+      [54] aload v5
+      [56] iconst_1
+      [57] invokevirtual #186
+        + Methodref [java/util/regex/Matcher.group (I)Ljava/lang/String;]
+      [60] astore_2 v2
+      [61] goto -38 (target=23)
+      [64] goto +10 (target=74)
+      [67] astore v5
+      [69] aload v5
+      [71] invokevirtual #172
+        + Methodref [java/lang/Exception.printStackTrace ()V]
+      [74] aload_2 v2
+      [75] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (6 -> 64: 67):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 5):
+        - [23] Var: [a:com/harad/prology/MainActivity][a:java/io/BufferedReader][a:java/lang/String][T][i], Stack: 
+        - [61] Var: [a:com/harad/prology/MainActivity][a:java/io/BufferedReader][a:java/lang/String][a:java/lang/String][i], Stack: 
+        - [64] Var: ..., Stack: (empty)
+        - [67] Var: [a:com/harad/prology/MainActivity][T][a:java/lang/String][T][i], Stack: [a:java/lang/Exception]
+        - [74] Var: ..., Stack: (empty)
+  + Method:       i()I
+    Access flags: 0x1
+      = public int i()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 19, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] invokevirtual #147
+        + Methodref [com/harad/prology/MainActivity.h ()Ljava/lang/String;]
+      [4] invokevirtual #178
+        + Methodref [java/lang/String.trim ()Ljava/lang/String;]
+      [7] astore_1 v1
+      [8] aload_1 v1
+      [9] invokestatic #175
+        + Methodref [java/lang/Integer.parseInt (Ljava/lang/String;)I]
+      [12] sipush 1024
+      [15] idiv
+      [16] istore_2 v2
+      [17] iload_2 v2
+      [18] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       j()Ljava/lang/String;
+    Access flags: 0x1
+      = public java.lang.String j()
+    Class member attributes (count = 2):
+    + Code attribute instructions (code length = 122, locals = 5, stack = 2):
+      [0] iconst_0
+      [1] istore_1 v1
+      [2] iconst_0
+      [3] istore_2 v2
+      [4] getstatic #98
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [7] bipush 11
+      [9] ificmplt +50 (target=59)
+      [12] new #55
+        + Class [android/graphics/Point]
+      [15] dup
+      [16] invokespecial #119
+        + Methodref [android/graphics/Point.<init> ()V]
+      [19] astore_3 v3
+      [20] aload_0 v0
+      [21] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [24] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [29] aload_3 v3
+      [30] invokevirtual #131
+        + Methodref [android/view/Display.getRealSize (Landroid/graphics/Point;)V]
+      [33] aload_3 v3
+      [34] getfield #90
+        + Fieldref [android/graphics/Point.x I]
+      [37] istore_1 v1
+      [38] aload_3 v3
+      [39] getfield #91
+        + Fieldref [android/graphics/Point.y I]
+      [42] istore_2 v2
+      [43] goto +13 (target=56)
+      [46] astore v4
+      [48] ldc #47
+        + String [error]
+      [50] ldc #48
+        + String [it can't work]
+      [52] invokestatic #129
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [55] pop
+      [56] goto +34 (target=90)
+      [59] new #62
+        + Class [android/util/DisplayMetrics]
+      [62] dup
+      [63] invokespecial #127
+        + Methodref [android/util/DisplayMetrics.<init> ()V]
+      [66] astore_3 v3
+      [67] aload_0 v0
+      [68] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [71] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [76] aload_3 v3
+      [77] invokevirtual #130
+        + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+      [80] aload_3 v3
+      [81] getfield #100
+        + Fieldref [android/util/DisplayMetrics.widthPixels I]
+      [84] istore_1 v1
+      [85] aload_3 v3
+      [86] getfield #99
+        + Fieldref [android/util/DisplayMetrics.heightPixels I]
+      [89] istore_2 v2
+      [90] new #85
+        + Class [java/lang/StringBuilder]
+      [93] dup
+      [94] invokespecial #179
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [97] iload_1 v1
+      [98] invokestatic #176
+        + Methodref [java/lang/Integer.toString (I)Ljava/lang/String;]
+      [101] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [104] ldc #51
+        + String [x]
+      [106] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [109] iload_2 v2
+      [110] invokestatic #176
+        + Methodref [java/lang/Integer.toString (I)Ljava/lang/String;]
+      [113] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [116] invokevirtual #184
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [119] astore_3 v3
+      [120] aload_3 v3
+      [121] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (20 -> 43: 46):
+      + Class [java/lang/NoSuchMethodError]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [46] Var: [a:com/harad/prology/MainActivity][i][i][a:android/graphics/Point], Stack: [a:java/lang/NoSuchMethodError]
+        - [56] Var: -1, Stack: (empty)
+        - [59] Var: ..., Stack: (empty)
+        - [90] Var: ..., Stack: (empty)
+    + Runtime invisible annotations attribute:
+      - Annotation [Landroid/annotation/TargetApi;]:
+        - Constant element value [value '73']
+          + Integer [17]
+  + Method:       k()F
+    Access flags: 0x1
+      = public float k()
+    Class member attributes (count = 2):
+    + Code attribute instructions (code length = 97, locals = 8, stack = 3):
+      [0] new #55
+        + Class [android/graphics/Point]
+      [3] dup
+      [4] invokespecial #119
+        + Methodref [android/graphics/Point.<init> ()V]
+      [7] astore_1 v1
+      [8] aload_0 v0
+      [9] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [12] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [17] aload_1 v1
+      [18] invokevirtual #131
+        + Methodref [android/view/Display.getRealSize (Landroid/graphics/Point;)V]
+      [21] aload_1 v1
+      [22] getfield #90
+        + Fieldref [android/graphics/Point.x I]
+      [25] istore_2 v2
+      [26] aload_1 v1
+      [27] getfield #91
+        + Fieldref [android/graphics/Point.y I]
+      [30] istore_3 v3
+      [31] new #62
+        + Class [android/util/DisplayMetrics]
+      [34] dup
+      [35] invokespecial #127
+        + Methodref [android/util/DisplayMetrics.<init> ()V]
+      [38] astore v4
+      [40] aload_0 v0
+      [41] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [44] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [49] aload v4
+      [51] invokevirtual #130
+        + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+      [54] iload_2 v2
+      [55] i2f
+      [56] aload v4
+      [58] getfield #101
+        + Fieldref [android/util/DisplayMetrics.xdpi F]
+      [61] fconst_1
+      [62] fmul
+      [63] fdiv
+      [64] fstore v5
+      [66] iload_3 v3
+      [67] i2f
+      [68] aload v4
+      [70] getfield #102
+        + Fieldref [android/util/DisplayMetrics.ydpi F]
+      [73] fconst_1
+      [74] fmul
+      [75] fdiv
+      [76] fstore v6
+      [78] fload v5
+      [80] fload v5
+      [82] fmul
+      [83] fload v6
+      [85] fload v6
+      [87] fmul
+      [88] fadd
+      [89] invokestatic #128
+        + Methodref [android/util/FloatMath.sqrt (F)F]
+      [92] fstore v7
+      [94] fload v7
+      [96] freturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+    + Runtime invisible annotations attribute:
+      - Annotation [Landroid/annotation/TargetApi;]:
+        - Constant element value [value '73']
+          + Integer [17]
+  + Method:       l()Ljava/lang/Float;
+    Access flags: 0x1
+      = public java.lang.Float l()
+    Class member attributes (count = 2):
+    + Code attribute instructions (code length = 222, locals = 13, stack = 3):
+      [0] iconst_0
+      [1] istore_1 v1
+      [2] iconst_0
+      [3] istore_2 v2
+      [4] getstatic #98
+        + Fieldref [android/os/Build$VERSION.SDK_INT I]
+      [7] bipush 11
+      [9] ificmplt +50 (target=59)
+      [12] new #55
+        + Class [android/graphics/Point]
+      [15] dup
+      [16] invokespecial #119
+        + Methodref [android/graphics/Point.<init> ()V]
+      [19] astore_3 v3
+      [20] aload_0 v0
+      [21] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [24] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [29] aload_3 v3
+      [30] invokevirtual #131
+        + Methodref [android/view/Display.getRealSize (Landroid/graphics/Point;)V]
+      [33] aload_3 v3
+      [34] getfield #90
+        + Fieldref [android/graphics/Point.x I]
+      [37] istore_1 v1
+      [38] aload_3 v3
+      [39] getfield #91
+        + Fieldref [android/graphics/Point.y I]
+      [42] istore_2 v2
+      [43] goto +13 (target=56)
+      [46] astore v4
+      [48] ldc #47
+        + String [error]
+      [50] ldc #48
+        + String [it can't work]
+      [52] invokestatic #129
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [55] pop
+      [56] goto +34 (target=90)
+      [59] new #62
+        + Class [android/util/DisplayMetrics]
+      [62] dup
+      [63] invokespecial #127
+        + Methodref [android/util/DisplayMetrics.<init> ()V]
+      [66] astore_3 v3
+      [67] aload_0 v0
+      [68] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [71] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [76] aload_3 v3
+      [77] invokevirtual #130
+        + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+      [80] aload_3 v3
+      [81] getfield #100
+        + Fieldref [android/util/DisplayMetrics.widthPixels I]
+      [84] istore_1 v1
+      [85] aload_3 v3
+      [86] getfield #99
+        + Fieldref [android/util/DisplayMetrics.heightPixels I]
+      [89] istore_2 v2
+      [90] iload_1 v1
+      [91] i2f
+      [92] fstore_3 v3
+      [93] iload_2 v2
+      [94] i2f
+      [95] fstore v4
+      [97] new #55
+        + Class [android/graphics/Point]
+      [100] dup
+      [101] invokespecial #119
+        + Methodref [android/graphics/Point.<init> ()V]
+      [104] astore v5
+      [106] aload_0 v0
+      [107] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [110] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [115] aload v5
+      [117] invokevirtual #131
+        + Methodref [android/view/Display.getRealSize (Landroid/graphics/Point;)V]
+      [120] aload v5
+      [122] getfield #90
+        + Fieldref [android/graphics/Point.x I]
+      [125] istore v6
+      [127] aload v5
+      [129] getfield #91
+        + Fieldref [android/graphics/Point.y I]
+      [132] istore v7
+      [134] new #62
+        + Class [android/util/DisplayMetrics]
+      [137] dup
+      [138] invokespecial #127
+        + Methodref [android/util/DisplayMetrics.<init> ()V]
+      [141] astore v8
+      [143] aload_0 v0
+      [144] invokevirtual #146
+        + Methodref [com/harad/prology/MainActivity.getWindowManager ()Landroid/view/WindowManager;]
+      [147] invokeinterface #191
+        + InterfaceMethodref [android/view/WindowManager.getDefaultDisplay ()Landroid/view/Display;]
+      [152] aload v8
+      [154] invokevirtual #130
+        + Methodref [android/view/Display.getMetrics (Landroid/util/DisplayMetrics;)V]
+      [157] iload v6
+      [159] i2f
+      [160] aload v8
+      [162] getfield #101
+        + Fieldref [android/util/DisplayMetrics.xdpi F]
+      [165] fconst_1
+      [166] fmul
+      [167] fdiv
+      [168] fstore v9
+      [170] iload v7
+      [172] i2f
+      [173] aload v8
+      [175] getfield #102
+        + Fieldref [android/util/DisplayMetrics.ydpi F]
+      [178] fconst_1
+      [179] fmul
+      [180] fdiv
+      [181] fstore v10
+      [183] fload v9
+      [185] fload v9
+      [187] fmul
+      [188] fload v10
+      [190] fload v10
+      [192] fmul
+      [193] fadd
+      [194] invokestatic #128
+        + Methodref [android/util/FloatMath.sqrt (F)F]
+      [197] fstore v11
+      [199] fload v4
+      [201] fload v4
+      [203] fmul
+      [204] fload_3 v3
+      [205] fload_3 v3
+      [206] fmul
+      [207] fadd
+      [208] invokestatic #128
+        + Methodref [android/util/FloatMath.sqrt (F)F]
+      [211] fload v11
+      [213] fdiv
+      [214] fstore v12
+      [216] fload v12
+      [218] invokestatic #174
+        + Methodref [java/lang/Float.valueOf (F)Ljava/lang/Float;]
+      [221] areturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (20 -> 43: 46):
+      + Class [java/lang/NoSuchMethodError]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 4):
+        - [46] Var: [a:com/harad/prology/MainActivity][i][i][a:android/graphics/Point], Stack: [a:java/lang/NoSuchMethodError]
+        - [56] Var: -1, Stack: (empty)
+        - [59] Var: ..., Stack: (empty)
+        - [90] Var: ..., Stack: (empty)
+    + Runtime invisible annotations attribute:
+      - Annotation [Landroid/annotation/TargetApi;]:
+        - Constant element value [value '73']
+          + Integer [17]
+  + Method:       onActivityResult(IILandroid/content/Intent;)V
+    Access flags: 0x4
+      = protected void onActivityResult(int,int,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 395, locals = 18, stack = 4):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] iload_2 v2
+      [3] aload_3 v3
+      [4] invokespecial #107
+        + Methodref [android/app/Activity.onActivityResult (IILandroid/content/Intent;)V]
+      [7] iload_1 v1
+      [8] sipush 1001
+      [11] ificmpne +383 (target=394)
+      [14] iload_2 v2
+      [15] iconst_m1
+      [16] ificmpne +378 (target=394)
+      [19] aload_3 v3
+      [20] ldc #22
+        + String [GLInfo]
+      [22] invokevirtual #113
+        + Methodref [android/content/Intent.getStringExtra (Ljava/lang/String;)Ljava/lang/String;]
+      [25] astore v4
+      [27] aload_0 v0
+      [28] invokevirtual #136
+        + Methodref [com/harad/prology/MainActivity.a ()Ljava/lang/String;]
+      [31] astore v5
+      [33] aload_0 v0
+      [34] invokevirtual #137
+        + Methodref [com/harad/prology/MainActivity.b ()Ljava/lang/String;]
+      [37] astore v6
+      [39] aload_0 v0
+      [40] invokevirtual #139
+        + Methodref [com/harad/prology/MainActivity.d ()I]
+      [43] istore v7
+      [45] aload_0 v0
+      [46] invokevirtual #141
+        + Methodref [com/harad/prology/MainActivity.f ()Ljava/lang/String;]
+      [49] astore v8
+      [51] aload_0 v0
+      [52] invokevirtual #143
+        + Methodref [com/harad/prology/MainActivity.g ()Ljava/lang/String;]
+      [55] astore v9
+      [57] aload_0 v0
+      [58] invokevirtual #148
+        + Methodref [com/harad/prology/MainActivity.i ()I]
+      [61] istore v10
+      [63] aload_0 v0
+      [64] invokevirtual #149
+        + Methodref [com/harad/prology/MainActivity.j ()Ljava/lang/String;]
+      [67] astore v11
+      [69] aload_0 v0
+      [70] invokevirtual #150
+        + Methodref [com/harad/prology/MainActivity.k ()F]
+      [73] ldc #8
+        + Float [10.0]
+      [75] fmul
+      [76] invokestatic #177
+        + Methodref [java/lang/Math.round (F)I]
+      [79] i2d
+      [80] ldc2_w #88
+        + Double [10.0]
+      [83] ddiv
+      [84] dstore v12
+      [86] dload v12
+      [88] invokestatic #170
+        + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
+      [91] astore v14
+      [93] aload_0 v0
+      [94] invokevirtual #151
+        + Methodref [com/harad/prology/MainActivity.l ()Ljava/lang/Float;]
+      [97] invokevirtual #173
+        + Methodref [java/lang/Float.floatValue ()F]
+      [100] fconst_1
+      [101] fmul
+      [102] invokestatic #177
+        + Methodref [java/lang/Math.round (F)I]
+      [105] iconst_1
+      [106] idiv
+      [107] istore v15
+      [109] iload v15
+      [111] invokestatic #176
+        + Methodref [java/lang/Integer.toString (I)Ljava/lang/String;]
+      [114] astore v16
+      [116] aload_0 v0
+      [117] ldc #7
+        + Integer [2131099648]
+      [119] invokevirtual #142
+        + Methodref [com/harad/prology/MainActivity.findViewById (I)Landroid/view/View;]
+      [122] checkcast #69
+        + Class [android/widget/TextView]
+      [125] astore v17
+      [127] aload v17
+      [129] new #85
+        + Class [java/lang/StringBuilder]
+      [132] dup
+      [133] invokespecial #179
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [136] ldc #28
+        + String [Model: ]
+      [138] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [141] getstatic #95
+        + Fieldref [android/os/Build.MODEL Ljava/lang/String;]
+      [144] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [147] ldc #10
+        + String [
+]
+      [149] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [152] ldc #17
+        + String [Brand: ]
+      [154] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [157] getstatic #93
+        + Fieldref [android/os/Build.BRAND Ljava/lang/String;]
+      [160] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [163] ldc #10
+        + String [
+]
+      [165] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [168] ldc #16
+        + String [Board: ]
+      [170] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [173] getstatic #92
+        + Fieldref [android/os/Build.BOARD Ljava/lang/String;]
+      [176] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [179] ldc #10
+        + String [
+]
+      [181] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [184] ldc #18
+        + String [CPU Chip: ]
+      [186] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [189] getstatic #94
+        + Fieldref [android/os/Build.HARDWARE Ljava/lang/String;]
+      [192] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [195] ldc #10
+        + String [
+]
+      [197] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [200] ldc #31
+        + String [Processor: ]
+      [202] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [205] aload v5
+      [207] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [210] ldc #10
+        + String [
+]
+      [212] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [215] ldc #25
+        + String [Max CPU frequency: ]
+      [217] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [220] iload v7
+      [222] invokevirtual #181
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [225] ldc #27
+        + String [Mhz]
+      [227] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [230] ldc #10
+        + String [
+]
+      [232] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [235] ldc #29
+        + String [Number of cores: ]
+      [237] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [240] aload v6
+      [242] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [245] ldc #10
+        + String [
+]
+      [247] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [250] aload v4
+      [252] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [255] ldc #10
+        + String [
+]
+      [257] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [260] ldc #33
+        + String [RAM: ]
+      [262] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [265] iload v10
+      [267] invokevirtual #181
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [270] ldc #24
+        + String [MB]
+      [272] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [275] ldc #10
+        + String [
+]
+      [277] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [280] ldc #41
+        + String [System storage: ]
+      [282] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [285] aload v9
+      [287] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [290] ldc #10
+        + String [
+]
+      [292] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [295] ldc #23
+        + String [Internal storage: ]
+      [297] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [300] aload v8
+      [302] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [305] ldc #10
+        + String [
+]
+      [307] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [310] ldc #15
+        + String [Android version: ]
+      [312] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [315] getstatic #96
+        + Fieldref [android/os/Build$VERSION.RELEASE Ljava/lang/String;]
+      [318] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [321] ldc #10
+        + String [
+]
+      [323] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [326] ldc #34
+        + String [SDK version: ]
+      [328] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [331] getstatic #97
+        + Fieldref [android/os/Build$VERSION.SDK Ljava/lang/String;]
+      [334] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [337] ldc #10
+        + String [
+]
+      [339] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [342] ldc #39
+        + String [Screen resolution: ]
+      [344] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [347] aload v11
+      [349] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [352] ldc #10
+        + String [
+]
+      [354] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [357] ldc #37
+        + String [Screen diagonal: ]
+      [359] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [362] aload v14
+      [364] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [367] ldc #10
+        + String [
+]
+      [369] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [372] ldc #38
+        + String [Screen ppi: ]
+      [374] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [377] aload v16
+      [379] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [382] invokevirtual #184
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [385] invokevirtual #133
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [388] aload_0 v0
+      [389] aload v17
+      [391] invokevirtual #154
+        + Methodref [com/harad/prology/MainActivity.registerForContextMenu (Landroid/view/View;)V]
+      [394] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [394] Var: ..., Stack: (empty)
+  + Method:       onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
+    Access flags: 0x1
+      = public void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 37, locals = 4, stack = 5):
+      [0] aload_1 v1
+      [1] iconst_0
+      [2] iconst_1
+      [3] iconst_0
+      [4] ldc #21
+        + String [Copy to the clipboard]
+      [6] invokeinterface #189
+        + InterfaceMethodref [android/view/ContextMenu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+      [11] pop
+      [12] aload_1 v1
+      [13] iconst_0
+      [14] iconst_2
+      [15] iconst_0
+      [16] ldc #40
+        + String [Send via Email]
+      [18] invokeinterface #189
+        + InterfaceMethodref [android/view/ContextMenu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+      [23] pop
+      [24] aload_1 v1
+      [25] iconst_0
+      [26] iconst_3
+      [27] iconst_0
+      [28] ldc #35
+        + String [Save to SDcard]
+      [30] invokeinterface #189
+        + InterfaceMethodref [android/view/ContextMenu.add (IIILjava/lang/CharSequence;)Landroid/view/MenuItem;]
+      [35] pop
+      [36] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onContextItemSelected(Landroid/view/MenuItem;)Z
+    Access flags: 0x1
+      = public boolean onContextItemSelected(android.view.MenuItem)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 297, locals = 8, stack = 6):
+      [0] aload_0 v0
+      [1] ldc #7
+        + Integer [2131099648]
+      [3] invokevirtual #142
+        + Methodref [com/harad/prology/MainActivity.findViewById (I)Landroid/view/View;]
+      [6] checkcast #69
+        + Class [android/widget/TextView]
+      [9] astore_2 v2
+      [10] aload_1 v1
+      [11] invokeinterface #190
+        + InterfaceMethodref [android/view/MenuItem.getItemId ()I]
+      [16] tableswitch (3 offsets, default=275) (target=291)
+        1: offset = 28, target = 44
+        2: offset = 59, target = 75
+        3: offset = 131, target = 147
+        default: offset = 275, target = 291
+      [44] aload_0 v0
+      [45] ldc #46
+        + String [clipboard]
+      [47] invokevirtual #145
+        + Methodref [com/harad/prology/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [50] checkcast #60
+        + Class [android/text/ClipboardManager]
+      [53] astore_3 v3
+      [54] aload_3 v3
+      [55] aload_2 v2
+      [56] invokevirtual #132
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [59] invokevirtual #125
+        + Methodref [android/text/ClipboardManager.setText (Ljava/lang/CharSequence;)V]
+      [62] aload_0 v0
+      [63] ldc #20
+        + String [Copied to clipboard]
+      [65] iconst_0
+      [66] invokestatic #134
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [69] invokevirtual #135
+        + Methodref [android/widget/Toast.show ()V]
+      [72] goto +219 (target=291)
+      [75] new #54
+        + Class [android/content/Intent]
+      [78] dup
+      [79] ldc #42
+        + String [android.intent.action.SEND]
+      [81] invokespecial #111
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [84] astore v4
+      [86] aload v4
+      [88] ldc #43
+        + String [android.intent.extra.EMAIL]
+      [90] iconst_1
+      [91] anewarray #84
+        + Class [java/lang/String]
+      [94] dup
+      [95] iconst_0
+      [96] ldc #9
+        + String []
+      [98] aastore
+      [99] invokevirtual #116
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;]
+      [102] pop
+      [103] aload v4
+      [105] ldc #44
+        + String [android.intent.extra.SUBJECT]
+      [107] ldc #9
+        + String []
+      [109] invokevirtual #115
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [112] pop
+      [113] aload v4
+      [115] ldc #45
+        + String [android.intent.extra.TEXT]
+      [117] aload_2 v2
+      [118] invokevirtual #132
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [121] invokevirtual #114
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+      [124] pop
+      [125] aload v4
+      [127] ldc #49
+        + String [message/rfc822]
+      [129] invokevirtual #118
+        + Methodref [android/content/Intent.setType (Ljava/lang/String;)Landroid/content/Intent;]
+      [132] pop
+      [133] aload_0 v0
+      [134] aload v4
+      [136] ldc #19
+        + String [Choose an Email client :]
+      [138] invokestatic #112
+        + Methodref [android/content/Intent.createChooser (Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;]
+      [141] invokevirtual #156
+        + Methodref [com/harad/prology/MainActivity.startActivity (Landroid/content/Intent;)V]
+      [144] goto +147 (target=291)
+      [147] new #74
+        + Class [java/io/File]
+      [150] dup
+      [151] new #85
+        + Class [java/lang/StringBuilder]
+      [154] dup
+      [155] invokespecial #179
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [158] invokestatic #121
+        + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+      [161] invokevirtual #182
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [164] ldc #13
+        + String [/properties.txt]
+      [166] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [169] invokevirtual #184
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [172] invokespecial #160
+        + Methodref [java/io/File.<init> (Ljava/lang/String;)V]
+      [175] astore v5
+      [177] aload v5
+      [179] invokevirtual #161
+        + Methodref [java/io/File.createNewFile ()Z]
+      [182] pop
+      [183] new #75
+        + Class [java/io/FileOutputStream]
+      [186] dup
+      [187] aload v5
+      [189] invokespecial #163
+        + Methodref [java/io/FileOutputStream.<init> (Ljava/io/File;)V]
+      [192] astore v6
+      [194] new #77
+        + Class [java/io/OutputStreamWriter]
+      [197] dup
+      [198] aload v6
+      [200] invokespecial #167
+        + Methodref [java/io/OutputStreamWriter.<init> (Ljava/io/OutputStream;)V]
+      [203] astore v7
+      [205] aload v7
+      [207] aload_2 v2
+      [208] invokevirtual #132
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [211] invokevirtual #168
+        + Methodref [java/io/OutputStreamWriter.append (Ljava/lang/CharSequence;)Ljava/io/Writer;]
+      [214] pop
+      [215] aload v7
+      [217] invokevirtual #169
+        + Methodref [java/io/OutputStreamWriter.close ()V]
+      [220] aload v6
+      [222] invokevirtual #164
+        + Methodref [java/io/FileOutputStream.close ()V]
+      [225] aload_0 v0
+      [226] invokevirtual #144
+        + Methodref [com/harad/prology/MainActivity.getBaseContext ()Landroid/content/Context;]
+      [229] ldc #36
+        + String [Saved to properties.txt]
+      [231] iconst_0
+      [232] invokestatic #134
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [235] invokevirtual #135
+        + Methodref [android/widget/Toast.show ()V]
+      [238] goto +53 (target=291)
+      [241] astore v5
+      [243] aload_0 v0
+      [244] invokevirtual #144
+        + Methodref [com/harad/prology/MainActivity.getBaseContext ()Landroid/content/Context;]
+      [247] aload v5
+      [249] invokevirtual #171
+        + Methodref [java/lang/Exception.getMessage ()Ljava/lang/String;]
+      [252] iconst_0
+      [253] invokestatic #134
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [256] invokevirtual #135
+        + Methodref [android/widget/Toast.show ()V]
+      [259] aload_0 v0
+      [260] invokevirtual #144
+        + Methodref [com/harad/prology/MainActivity.getBaseContext ()Landroid/content/Context;]
+      [263] new #85
+        + Class [java/lang/StringBuilder]
+      [266] dup
+      [267] invokespecial #179
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [270] invokestatic #121
+        + Methodref [android/os/Environment.getExternalStorageDirectory ()Ljava/io/File;]
+      [273] invokevirtual #182
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;]
+      [276] ldc #13
+        + String [/properties.txt]
+      [278] invokevirtual #183
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [281] invokevirtual #184
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [284] iconst_0
+      [285] invokestatic #134
+        + Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [288] invokevirtual #135
+        + Methodref [android/widget/Toast.show ()V]
+      [291] aload_0 v0
+      [292] aload_1 v1
+      [293] invokespecial #108
+        + Methodref [android/app/Activity.onContextItemSelected (Landroid/view/MenuItem;)Z]
+      [296] ireturn
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (147 -> 238: 241):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 5):
+        - [44] Var: ...[a:android/widget/TextView], Stack: (empty)
+        - [75] Var: ..., Stack: (empty)
+        - [147] Var: ..., Stack: (empty)
+        - [241] Var: ..., Stack: [a:java/lang/Exception]
+        - [291] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/harad/prology/TestGL
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.harad.prology.TestGL extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 78):
+  + String [GLInfo]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/opengl/GLSurfaceView]
+  + Class [android/view/SurfaceHolder]
+  + Class [com/harad/prology/TestGL]
+  + Class [com/harad/prology/a]
+  + Class [com/harad/prology/b]
+  + Fieldref [com/harad/prology/TestGL.a Landroid/opengl/GLSurfaceView;]
+  + Fieldref [com/harad/prology/TestGL.b Landroid/os/Handler;]
+  + Fieldref [com/harad/prology/TestGL.c Landroid/opengl/GLSurfaceView$Renderer;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/opengl/GLSurfaceView.<init> (Landroid/content/Context;)V]
+  + Methodref [android/opengl/GLSurfaceView.getHolder ()Landroid/view/SurfaceHolder;]
+  + Methodref [android/opengl/GLSurfaceView.setEGLConfigChooser (IIIIII)V]
+  + Methodref [android/opengl/GLSurfaceView.setRenderer (Landroid/opengl/GLSurfaceView$Renderer;)V]
+  + Methodref [com/harad/prology/TestGL.finish ()V]
+  + Methodref [com/harad/prology/TestGL.setContentView (Landroid/view/View;)V]
+  + Methodref [com/harad/prology/TestGL.setResult (ILandroid/content/Intent;)V]
+  + Methodref [com/harad/prology/a.<init> (Lcom/harad/prology/TestGL;)V]
+  + Methodref [com/harad/prology/b.<init> (Lcom/harad/prology/TestGL;)V]
+  + InterfaceMethodref [android/view/SurfaceHolder.setFormat (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [<init> (Lcom/harad/prology/TestGL;)V]
+  + NameAndType [a Landroid/opengl/GLSurfaceView;]
+  + NameAndType [b Landroid/os/Handler;]
+  + NameAndType [c Landroid/opengl/GLSurfaceView$Renderer;]
+  + NameAndType [finish ()V]
+  + NameAndType [getHolder ()Landroid/view/SurfaceHolder;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [setContentView (Landroid/view/View;)V]
+  + NameAndType [setEGLConfigChooser (IIIIII)V]
+  + NameAndType [setFormat (I)V]
+  + NameAndType [setRenderer (Landroid/opengl/GLSurfaceView$Renderer;)V]
+  + NameAndType [setResult (ILandroid/content/Intent;)V]
+  + Utf8 [()Landroid/view/SurfaceHolder;]
+  + Utf8 [()V]
+  + Utf8 [(I)V]
+  + Utf8 [(IIIIII)V]
+  + Utf8 [(ILandroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/opengl/GLSurfaceView$Renderer;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Lcom/harad/prology/TestGL;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [GLInfo]
+  + Utf8 [Landroid/opengl/GLSurfaceView$Renderer;]
+  + Utf8 [Landroid/opengl/GLSurfaceView;]
+  + Utf8 [Landroid/os/Handler;]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/opengl/GLSurfaceView]
+  + Utf8 [android/view/SurfaceHolder]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/harad/prology/TestGL]
+  + Utf8 [com/harad/prology/a]
+  + Utf8 [com/harad/prology/b]
+  + Utf8 [finish]
+  + Utf8 [getHolder]
+  + Utf8 [onCreate]
+  + Utf8 [putExtra]
+  + Utf8 [setContentView]
+  + Utf8 [setEGLConfigChooser]
+  + Utf8 [setFormat]
+  + Utf8 [setRenderer]
+  + Utf8 [setResult]
+
+Fields (count = 3):
+  + Field:        a Landroid/opengl/GLSurfaceView;
+    Access flags: 0x0
+      = android.opengl.GLSurfaceView a
+  + Field:        b Landroid/os/Handler;
+    Access flags: 0x10
+      = final android.os.Handler b
+  + Field:        c Landroid/opengl/GLSurfaceView$Renderer;
+    Access flags: 0x0
+      = android.opengl.GLSurfaceView$Renderer c
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public TestGL()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 29, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #12
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] new #7
+        + Class [com/harad/prology/a]
+      [8] dup
+      [9] aload_0 v0
+      [10] invokespecial #23
+        + Methodref [com/harad/prology/a.<init> (Lcom/harad/prology/TestGL;)V]
+      [13] putfield #10
+        + Fieldref [com/harad/prology/TestGL.b Landroid/os/Handler;]
+      [16] aload_0 v0
+      [17] new #8
+        + Class [com/harad/prology/b]
+      [20] dup
+      [21] aload_0 v0
+      [22] invokespecial #24
+        + Methodref [com/harad/prology/b.<init> (Lcom/harad/prology/TestGL;)V]
+      [25] putfield #11
+        + Fieldref [com/harad/prology/TestGL.c Landroid/opengl/GLSurfaceView$Renderer;]
+      [28] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 69, locals = 2, stack = 7):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #13
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] new #4
+        + Class [android/opengl/GLSurfaceView]
+      [9] dup
+      [10] aload_0 v0
+      [11] invokespecial #16
+        + Methodref [android/opengl/GLSurfaceView.<init> (Landroid/content/Context;)V]
+      [14] putfield #9
+        + Fieldref [com/harad/prology/TestGL.a Landroid/opengl/GLSurfaceView;]
+      [17] aload_0 v0
+      [18] getfield #9
+        + Fieldref [com/harad/prology/TestGL.a Landroid/opengl/GLSurfaceView;]
+      [21] bipush 8
+      [23] bipush 8
+      [25] bipush 8
+      [27] bipush 8
+      [29] bipush 16
+      [31] iconst_0
+      [32] invokevirtual #18
+        + Methodref [android/opengl/GLSurfaceView.setEGLConfigChooser (IIIIII)V]
+      [35] aload_0 v0
+      [36] getfield #9
+        + Fieldref [com/harad/prology/TestGL.a Landroid/opengl/GLSurfaceView;]
+      [39] invokevirtual #17
+        + Methodref [android/opengl/GLSurfaceView.getHolder ()Landroid/view/SurfaceHolder;]
+      [42] bipush -3
+      [44] invokeinterface #25
+        + InterfaceMethodref [android/view/SurfaceHolder.setFormat (I)V]
+      [49] aload_0 v0
+      [50] getfield #9
+        + Fieldref [com/harad/prology/TestGL.a Landroid/opengl/GLSurfaceView;]
+      [53] aload_0 v0
+      [54] getfield #11
+        + Fieldref [com/harad/prology/TestGL.c Landroid/opengl/GLSurfaceView$Renderer;]
+      [57] invokevirtual #19
+        + Methodref [android/opengl/GLSurfaceView.setRenderer (Landroid/opengl/GLSurfaceView$Renderer;)V]
+      [60] aload_0 v0
+      [61] aload_0 v0
+      [62] getfield #9
+        + Fieldref [com/harad/prology/TestGL.a Landroid/opengl/GLSurfaceView;]
+      [65] invokevirtual #21
+        + Methodref [com/harad/prology/TestGL.setContentView (Landroid/view/View;)V]
+      [68] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void a(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 3, stack = 3):
+      [0] new #3
+        + Class [android/content/Intent]
+      [3] dup
+      [4] invokespecial #14
+        + Methodref [android/content/Intent.<init> ()V]
+      [7] astore_2 v2
+      [8] aload_2 v2
+      [9] ldc #1
+        + String [GLInfo]
+      [11] aload_1 v1
+      [12] invokevirtual #15
+        + Methodref [android/content/Intent.putExtra (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [15] pop
+      [16] aload_0 v0
+      [17] iconst_m1
+      [18] aload_2 v2
+      [19] invokevirtual #22
+        + Methodref [com/harad/prology/TestGL.setResult (ILandroid/content/Intent;)V]
+      [22] aload_0 v0
+      [23] invokevirtual #20
+        + Methodref [com/harad/prology/TestGL.finish ()V]
+      [26] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/harad/prology/a
+  Superclass:    android/os/Handler
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.harad.prology.a extends android.os.Handler
+
+Interfaces (count = 0):
+
+Constant Pool (count = 35):
+  + Class [android/os/Handler]
+  + Class [android/os/Message]
+  + Class [com/harad/prology/TestGL]
+  + Class [com/harad/prology/a]
+  + Class [java/lang/String]
+  + Fieldref [android/os/Message.obj Ljava/lang/Object;]
+  + Fieldref [android/os/Message.what I]
+  + Fieldref [com/harad/prology/a.a Lcom/harad/prology/TestGL;]
+  + Methodref [android/os/Handler.<init> ()V]
+  + Methodref [com/harad/prology/TestGL.a (Ljava/lang/String;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Ljava/lang/String;)V]
+  + NameAndType [a Lcom/harad/prology/TestGL;]
+  + NameAndType [obj Ljava/lang/Object;]
+  + NameAndType [what I]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/os/Message;)V]
+  + Utf8 [(Lcom/harad/prology/TestGL;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Lcom/harad/prology/TestGL;]
+  + Utf8 [Ljava/lang/Object;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/os/Handler]
+  + Utf8 [android/os/Message]
+  + Utf8 [com/harad/prology/TestGL]
+  + Utf8 [com/harad/prology/a]
+  + Utf8 [handleMessage]
+  + Utf8 [java/lang/String]
+  + Utf8 [obj]
+  + Utf8 [what]
+
+Fields (count = 1):
+  + Field:        a Lcom/harad/prology/TestGL;
+    Access flags: 0x1010
+      = final synthetic com.harad.prology.TestGL a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/harad/prology/TestGL;)V
+    Access flags: 0x0
+      = a(com.harad.prology.TestGL)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #8
+        + Fieldref [com/harad/prology/a.a Lcom/harad/prology/TestGL;]
+      [5] aload_0 v0
+      [6] invokespecial #9
+        + Methodref [android/os/Handler.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       handleMessage(Landroid/os/Message;)V
+    Access flags: 0x1
+      = public void handleMessage(android.os.Message)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 22, locals = 2, stack = 2):
+      [0] aload_1 v1
+      [1] getfield #7
+        + Fieldref [android/os/Message.what I]
+      [4] ifne +17 (target=21)
+      [7] aload_0 v0
+      [8] getfield #8
+        + Fieldref [com/harad/prology/a.a Lcom/harad/prology/TestGL;]
+      [11] aload_1 v1
+      [12] getfield #6
+        + Fieldref [android/os/Message.obj Ljava/lang/Object;]
+      [15] checkcast #5
+        + Class [java/lang/String]
+      [18] invokevirtual #10
+        + Methodref [com/harad/prology/TestGL.a (Ljava/lang/String;)V]
+      [21] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [21] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/harad/prology/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.harad.prology.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/opengl/GLSurfaceView$Renderer]
+
+Constant Pool (count = 68):
+  + Float [8.0]
+  + String [
+]
+  + String [GPU Model: ]
+  + String [GPU Vendor: ]
+  + String [GPU Version: ]
+  + Class [android/opengl/GLSurfaceView$Renderer]
+  + Class [android/os/Message]
+  + Class [com/harad/prology/TestGL]
+  + Class [com/harad/prology/b]
+  + Class [java/lang/Object]
+  + Class [java/lang/StringBuilder]
+  + Class [javax/microedition/khronos/opengles/GL10]
+  + Fieldref [com/harad/prology/TestGL.b Landroid/os/Handler;]
+  + Fieldref [com/harad/prology/b.a Lcom/harad/prology/TestGL;]
+  + Methodref [android/os/Message.obtain (Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;]
+  + Methodref [android/os/Message.sendToTarget ()V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + InterfaceMethodref [javax/microedition/khronos/opengles/GL10.glClearColor (FFFF)V]
+  + InterfaceMethodref [javax/microedition/khronos/opengles/GL10.glGetString (I)Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/harad/prology/TestGL;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b Landroid/os/Handler;]
+  + NameAndType [glClearColor (FFFF)V]
+  + NameAndType [glGetString (I)Ljava/lang/String;]
+  + NameAndType [obtain (Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;]
+  + NameAndType [sendToTarget ()V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [
+]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(FFFF)V]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;]
+  + Utf8 [(Lcom/harad/prology/TestGL;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljavax/microedition/khronos/opengles/GL10;)V]
+  + Utf8 [(Ljavax/microedition/khronos/opengles/GL10;II)V]
+  + Utf8 [(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [GPU Model: ]
+  + Utf8 [GPU Vendor: ]
+  + Utf8 [GPU Version: ]
+  + Utf8 [Landroid/os/Handler;]
+  + Utf8 [Lcom/harad/prology/TestGL;]
+  + Utf8 [a]
+  + Utf8 [android/opengl/GLSurfaceView$Renderer]
+  + Utf8 [android/os/Message]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [com/harad/prology/TestGL]
+  + Utf8 [com/harad/prology/b]
+  + Utf8 [glClearColor]
+  + Utf8 [glGetString]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [javax/microedition/khronos/opengles/GL10]
+  + Utf8 [obtain]
+  + Utf8 [onDrawFrame]
+  + Utf8 [onSurfaceChanged]
+  + Utf8 [onSurfaceCreated]
+  + Utf8 [sendToTarget]
+  + Utf8 [toString]
+
+Fields (count = 1):
+  + Field:        a Lcom/harad/prology/TestGL;
+    Access flags: 0x1010
+      = final synthetic com.harad.prology.TestGL a
+
+Methods (count = 4):
+  - Method:       <init>(Lcom/harad/prology/TestGL;)V
+    Access flags: 0x0
+      = b(com.harad.prology.TestGL)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #14
+        + Fieldref [com/harad/prology/b.a Lcom/harad/prology/TestGL;]
+      [5] aload_0 v0
+      [6] invokespecial #17
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
+    Access flags: 0x1
+      = public void onSurfaceCreated(javax.microedition.khronos.opengles.GL10,javax.microedition.khronos.egl.EGLConfig)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 131, locals = 4, stack = 5):
+      [0] aload_1 v1
+      [1] ldc #1
+        + Float [8.0]
+      [3] ldc #1
+        + Float [8.0]
+      [5] ldc #1
+        + Float [8.0]
+      [7] fconst_0
+      [8] invokeinterface #21
+        + InterfaceMethodref [javax/microedition/khronos/opengles/GL10.glClearColor (FFFF)V]
+      [13] new #11
+        + Class [java/lang/StringBuilder]
+      [16] dup
+      [17] invokespecial #18
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [20] ldc #3
+        + String [GPU Model: ]
+      [22] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [25] aload_1 v1
+      [26] sipush 7937
+      [29] invokeinterface #22
+        + InterfaceMethodref [javax/microedition/khronos/opengles/GL10.glGetString (I)Ljava/lang/String;]
+      [34] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [37] invokevirtual #20
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [40] astore_3 v3
+      [41] new #11
+        + Class [java/lang/StringBuilder]
+      [44] dup
+      [45] invokespecial #18
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [48] aload_3 v3
+      [49] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [52] ldc #2
+        + String [
+]
+      [54] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [57] ldc #4
+        + String [GPU Vendor: ]
+      [59] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [62] aload_1 v1
+      [63] sipush 7936
+      [66] invokeinterface #22
+        + InterfaceMethodref [javax/microedition/khronos/opengles/GL10.glGetString (I)Ljava/lang/String;]
+      [71] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [74] invokevirtual #20
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [77] astore_3 v3
+      [78] new #11
+        + Class [java/lang/StringBuilder]
+      [81] dup
+      [82] invokespecial #18
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [85] aload_3 v3
+      [86] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [89] ldc #2
+        + String [
+]
+      [91] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [94] ldc #5
+        + String [GPU Version: ]
+      [96] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [99] aload_1 v1
+      [100] sipush 7938
+      [103] invokeinterface #22
+        + InterfaceMethodref [javax/microedition/khronos/opengles/GL10.glGetString (I)Ljava/lang/String;]
+      [108] invokevirtual #19
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [111] invokevirtual #20
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [114] astore_3 v3
+      [115] aload_0 v0
+      [116] getfield #14
+        + Fieldref [com/harad/prology/b.a Lcom/harad/prology/TestGL;]
+      [119] getfield #13
+        + Fieldref [com/harad/prology/TestGL.b Landroid/os/Handler;]
+      [122] iconst_0
+      [123] aload_3 v3
+      [124] invokestatic #15
+        + Methodref [android/os/Message.obtain (Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;]
+      [127] invokevirtual #16
+        + Methodref [android/os/Message.sendToTarget ()V]
+      [130] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
+    Access flags: 0x1
+      = public void onSurfaceChanged(javax.microedition.khronos.opengles.GL10,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 4, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
+    Access flags: 0x1
+      = public void onDrawFrame(javax.microedition.khronos.opengles.GL10)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
